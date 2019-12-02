@@ -1,0 +1,161 @@
+<html>
+	<head>
+		<title>My Stream Animated Panels</title>
+		<meta http-equiv="refresh" content="60">
+		<style>
+			@font-face {
+				font-family: 'Dolce Vita';
+				src: url('fonts/Dolce Vita.ttf');
+				}
+			#reminderContainer {
+				width: 0px;
+				height: 0px;
+				background: #0a090a;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				overflow: hidden;
+				color: white;
+				font-family: 'Dolce Vita';
+				-webkit-box-shadow: 0px 0px 20px #c20a25;
+				-webkit-animation: animateReminder 10s 0s 1;
+				}
+			#SecondContainer {
+				width: 0px;
+				height: 0px;
+				background: #0a090a;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				overflow: hidden;
+				color: white;
+				font-family: 'Dolce Vita';
+				-webkit-box-shadow: 0px 0px 20px #c20a25;
+				-webkit-animation: animateReminder 10s 20s 1;
+				}	
+			#ThirdContainer {
+				width: 0px;
+				height: 0px;
+				background: #0a090a;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				overflow: hidden;
+				color: white;
+				font-family: 'Dolce Vita';
+				-webkit-box-shadow: 0px 0px 20px #c20a25;
+				-webkit-animation: animateReminder 10s 40s 1;
+				}
+			#FourthContainer {
+				width: 0px;
+				height: 0px;
+				background: #0a090a;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				overflow: hidden;
+				color: white;
+				font-family: 'Dolce Vita';
+				-webkit-box-shadow: 0px 0px 20px #c20a25;
+				-webkit-animation: animateReminder 10s 45s 1;
+				}
+			.reminderHeader {
+				width: 400px;
+				height: 26px;
+				background: #a6052a;
+				position: relative;
+				overflow: hidden;
+				text-align: center;
+				font-size: 24px;
+				}
+			.reminderContent {
+				width: 400px;
+				height: 94px;
+				background: #e81042;
+				position: relative;
+				overflow: hidden;
+				color: white;
+				text-align: center;
+				}
+			#reminderContentText {
+				margin-top: 20px;
+			}
+			.twitchLogo {
+				width: 90px;
+				height: 90px;
+				float: left;
+				}
+			#twitterContentText {
+				margin-top: 20px;
+				font-size: 36px;
+			}
+			#subContentText {
+				margin-top: 30px;
+				font-size: 36px;
+				text-align: center;
+			}	
+			@-webkit-keyframes animateReminder {
+				0%, 100% {
+					width: 0px;
+					height: 24px;
+					}
+				20%, 80% {
+					width: 400px;
+					height: 24px;
+					}
+				30%, 70% {
+					width: 400px;
+					height: 120px;
+					}
+				}
+		</style>		
+		<script>
+		
+		</script>
+	</head>
+	<body>
+		<div id="reminderContainer">
+			<div class="reminderHeader">
+				<span>Reminder</span>
+			</div>
+
+			<div class="reminderContent">
+				<image class="twitchLogo" src="images\twitchLogo.png">
+				<div id="reminderContentText">
+					<span>
+						Like what you see in the stream?<br>
+						Consider clicking the follow botton above.
+					</span>
+				</div>
+			</div>
+		</div>
+		
+		<div id="SecondContainer">
+			<div class="reminderHeader">
+				<span>Twitter</span>
+			</div>
+
+			<div class="reminderContent">
+				<image class="twitchLogo" src="images\twitterLogo.png">
+				<div id="twitterContentText">
+					<span>
+						@RagnarozSr
+					</span>
+				</div>
+			</div>
+		</div>
+		
+		<div id="ThirdContainer">
+			<div class="reminderHeader">
+				<span>Latest subscriber</span>
+			</div>
+
+			<div class="reminderContent">
+				<div id="subContentText">
+						DeimosG
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -10,7 +10,8 @@ request.send()
 request.onload = function () {
     var res = JSON.parse(request.response)
     userId = res.data[0].id
-    getLatestFollower(userId)
+    //getLatestFollower(userId)
+    getAuth()
 }
 
 function getLatestFollower(id) {
@@ -24,5 +25,17 @@ function getLatestFollower(id) {
         setTimeout(function() {
             getLatestFollower(id)
         }, 60000)
+    }
+}
+
+function getAuth() {
+    request.open('GET', 'https://id.twitch.tv/oauth2/authorize')
+    request.setRequestHeader('client_id', clientId)
+    request.setRequestHeader('redirect_uri', 'https://festive-curran-281546.netlify.com/')
+    request.setRequestHeader('response_type', 'token')
+    request.setRequestHeader('scope', 'channel:read:subscriptions')
+    request.send()
+    request.onload = function() {
+        console.log(request.response);
     }
 }
